@@ -29,6 +29,7 @@ interface WindowState {
     x?: number,
     y?: number,
   ) => void;
+  resetWindows: () => void;
 }
 
 export const useWindowStore = create<WindowState>((set, get) => ({
@@ -181,6 +182,13 @@ export const useWindowStore = create<WindowState>((set, get) => ({
           },
         },
       },
+    });
+  },
+  resetWindows: () => {
+    set({
+      windows: {},
+      activeWindowId: null,
+      maxZIndex: 100,
     });
   },
 }));

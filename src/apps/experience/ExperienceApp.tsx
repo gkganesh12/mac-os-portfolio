@@ -85,9 +85,6 @@ export const ExperienceApp: React.FC = () => {
       <div className="mx-auto w-full max-w-3xl space-y-8">
         <header className="border-b border-white/10 pb-6 tracking-wider uppercase">
           <h1 className="text-3xl font-bold">Professional Experience</h1>
-          <p className="mt-2 font-mono text-sm text-zinc-500 normal-case">
-            Reflecting official resume records and core competencies.
-          </p>
         </header>
 
         <div className="relative space-y-12">

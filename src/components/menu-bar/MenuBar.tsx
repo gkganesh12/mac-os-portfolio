@@ -12,6 +12,9 @@ import { useWindowStore } from '@/store/windowStore';
 
 export const MenuBar: React.FC = () => {
   const activeAppId = useOSStore((state) => state.activeAppId);
+  const isLocked = useOSStore((state) => state.isLocked);
+  const setLocked = useOSStore((state) => state.setLocked);
+  const setShutdownDialogOpen = useOSStore((state) => state.setShutdownDialogOpen);
   const { activeMenuTitle, setActiveMenu, closeMenus } = useMenuStore();
   const menuBarRef = useRef<HTMLDivElement>(null);
   const { launchApp } = useAppLauncher();
@@ -49,11 +52,11 @@ export const MenuBar: React.FC = () => {
     { divider: true, label: 'div-2' },
     { label: 'Force Quit...', action: () => console.log('Force Quit') },
     { divider: true, label: 'div-3' },
-    { label: 'Sleep', action: () => console.log('Sleep') },
+    { label: 'Sleep', action: () => setLocked(true) },
     { label: 'Restart...', action: () => window.location.reload() },
-    { label: 'Shut Down...', action: () => console.log('Shut Down') },
+    { label: 'Shut Down...', action: () => setShutdownDialogOpen(true) },
     { divider: true, label: 'div-4' },
-    { label: 'Lock Screen', action: () => console.log('Lock') },
+    { label: 'Lock Screen', action: () => setLocked(true) },
     { label: 'Log Out Deepak...', action: () => console.log('Log Out') },
   ];
 
@@ -68,8 +71,8 @@ export const MenuBar: React.FC = () => {
           <div
             className={`flex h-[26px] w-[38px] cursor-default items-center justify-center rounded-[4px] transition-colors ${
               activeMenuTitle === 'apple' ? 'bg-white/20 text-white' : 'hover:bg-white/10'
-            }`}
-            onClick={() => setActiveMenu(activeMenuTitle === 'apple' ? null : 'apple')}
+            } ${isLocked ? 'pointer-events-none opacity-50' : ''}`}
+            onClick={() => !isLocked && setActiveMenu(activeMenuTitle === 'apple' ? null : 'apple')}
           >
             <span className="mb-0.5 text-[18px] leading-none"></span>
           </div>
@@ -93,16 +96,18 @@ export const MenuBar: React.FC = () => {
               <div key={section.title} className="relative flex h-full items-center gap-0.5">
                 <button
                   onClick={() =>
+                    !isLocked &&
                     setActiveMenu(activeMenuTitle === section.title ? null : section.title)
                   }
                   onMouseEnter={() => {
-                    if (activeMenuTitle) setActiveMenu(section.title);
+                    if (activeMenuTitle && !isLocked) setActiveMenu(section.title);
                   }}
+                  disabled={isLocked}
                   className={`flex h-[26px] cursor-default items-center rounded-[4px] px-2.5 transition-colors ${
                     activeMenuTitle === section.title
                       ? 'bg-white/20 text-white'
                       : 'hover:bg-white/10'
-                  }`}
+                  } ${isLocked ? 'pointer-events-none opacity-20' : ''}`}
                 >
                   <span className={isAppMenu ? 'font-bold' : ''}>{sectionTitle}</span>
                 </button>

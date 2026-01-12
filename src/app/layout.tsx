@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import { MenuBar } from '@/components/menu-bar/MenuBar';
-import { Dock } from '@/components/dock/Dock';
-import { Spotlight } from '@/components/spotlight/Spotlight';
 import { DesktopGuard } from '@/components/layout/DesktopGuard';
+import { AppRoot } from '@/components/layout/AppRoot';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -32,10 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} overflow-hidden bg-[#0A0A0A] text-white antialiased selection:bg-blue-500/30`}
       >
         <DesktopGuard>
-          <MenuBar />
-          <main className="relative h-screen w-screen pt-[31px]">{children}</main>
-          <Dock />
-          <Spotlight />
+          <AppRoot>{children}</AppRoot>
         </DesktopGuard>
       </body>
     </html>
