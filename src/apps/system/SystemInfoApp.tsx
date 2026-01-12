@@ -15,6 +15,7 @@ export const SystemInfoApp: React.FC = () => {
       </div>
 
       <div className="mx-auto grid w-full max-w-2xl grid-cols-1 gap-6 md:grid-cols-2">
+        {/* Creator Section */}
         <section className="rounded-xl border border-white/10 bg-white/5 p-4 transition-colors hover:border-blue-500/30">
           <div className="mb-3 flex items-center gap-2 text-blue-400">
             <Cpu size={18} />
@@ -31,6 +32,7 @@ export const SystemInfoApp: React.FC = () => {
           </div>
         </section>
 
+        {/* Technical Stack Section */}
         <section className="rounded-xl border border-white/10 bg-white/5 p-4 transition-colors hover:border-purple-500/30">
           <div className="mb-3 flex items-center gap-2 text-purple-400">
             <Database size={18} />
@@ -48,38 +50,49 @@ export const SystemInfoApp: React.FC = () => {
           </ul>
         </section>
 
+        {/* Expanded System Capabilities Section */}
         <section className="rounded-xl border border-white/10 bg-white/5 p-4 transition-colors hover:border-green-500/30 md:col-span-2">
           <div className="mb-3 flex items-center gap-2 text-green-400">
             <ShieldCheck size={18} />
             <h2 className="text-xs font-semibold tracking-widest text-zinc-400 uppercase">
-              Architectural Core
+              System Capabilities
             </h2>
           </div>
           <div className="grid grid-cols-1 gap-6 text-[11px] text-zinc-400 sm:grid-cols-3">
+            {/* Window Management */}
             <div className="flex flex-col gap-1.5">
               <span className="flex items-center gap-1.5 font-bold text-zinc-200">
-                <Layers size={12} className="text-blue-500" /> Interaction Engine
+                <Layers size={12} className="text-blue-500" /> Window Manager
               </span>
-              <span>
-                Proprietary window manager with z-index orchestration and coordinate-perfect
-                dragging.
-              </span>
+              <p className="leading-relaxed">
+                A fully functional windowing engine supporting drag-and-drop, multi-directional
+                resizing, and active state management. Includes global z-index handling to ensure
+                proper stacking contexts.
+              </p>
             </div>
+
+            {/* Desktop Interaction */}
             <div className="flex flex-col gap-1.5">
               <span className="flex items-center gap-1.5 font-bold text-zinc-200">
-                <Monitor size={12} className="text-purple-500" /> App Launcher
+                <Monitor size={12} className="text-purple-500" /> Interaction Engine
               </span>
-              <span>
-                1:1 Configuration-driven mapping for Dock, Search, and Menu Bar interfaces.
-              </span>
+              <p className="leading-relaxed">
+                Features a scalable Dock with active indicators, a context-aware Menu Bar, and
+                Spotlight-style fuzzy search. The entire lifecycle is managed via fragmented Zustand
+                stores for performance.
+              </p>
             </div>
+
+            {/* Platform Constraints */}
             <div className="flex flex-col gap-1.5">
               <span className="flex items-center gap-1.5 font-bold text-zinc-200">
-                <Database size={12} className="text-green-500" /> Data Persistence
+                <Database size={12} className="text-green-500" /> Platform Core
               </span>
-              <span>
-                Server-side CSV feedback logging with secure header-based admin extraction tool.
-              </span>
+              <p className="leading-relaxed">
+                Built as a desktop-first browser OS simulation. Includes accurate system behaviors
+                like Lock Screen, Sleep simulation, and power management loops, gracefully handling
+                browser security constraints.
+              </p>
             </div>
           </div>
         </section>
