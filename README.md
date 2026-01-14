@@ -5,7 +5,7 @@ A high-fidelity, web-based operating system UI built with Next.js and TypeScript
 ---
 
 ### SEO Metadata
-- **Project Title:** Deepak Tewatia Portfolio OS
+- **Project Title:** Ganesh Khetawat Portfolio OS
 - **Description:** A professional macOS-inspired web portfolio featuring a functional window manager, spotlight search, and system applications.
 - **Keywords:** Next.js, React, TypeScript, Tailwind CSS, Portfolio, macOS UI, System Design, Frontend Engineering, DevOps, Zustand, Framer Motion.
 - **Author:** Deepak Tewatia
@@ -81,7 +81,7 @@ mac-portfolio/
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/deepak1-1/mac-portfolio.git
+   git clone https://github.com/gkganesh12/mac-os-portfolio.git
    cd mac-portfolio
    ```
 2. Install dependencies:
@@ -128,10 +128,10 @@ The Contact app stores user feedback in a local CSV file within the project dire
 
 ## 👨‍💻 Author & Credits
 
-**Deepak Tewatia**
+**Ganesh Khetawat**
 *Developer / DevOps Engineer*
 
-- **GitHub:** [@deepak1-1](https://github.com/deepak1-1)
-- **LinkedIn:** [Deepak Tewatia](https://linkedin.com/in/deepak-tewatia-91507721b/)
+- **GitHub:** [@gkganesh12](https://github.com/gkganesh12)
+- **LinkedIn:** [Ganesh Khetawat](https://www.linkedin.com/in/ganeshkhetawat/)
 
 Built with focus on frontend precision and architectural purity.
