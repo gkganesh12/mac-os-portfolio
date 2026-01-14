@@ -11,9 +11,9 @@ export default function Home() {
 
   return (
     <div
-      className="relative h-full w-full overflow-hidden bg-cover bg-center transition-all duration-1000"
+      className="relative h-full w-full overflow-hidden bg-cover bg-center bg-no-repeat transition-all duration-1000"
       style={{
-        backgroundImage: 'radial-gradient(circle at 50% 50%, #2b3a67 0%, #0f172a 100%)',
+        backgroundImage: "url('/ganesh 1.png')",
       }}
     >
       {/* Desktop Content Layer */}
@@ -24,10 +24,10 @@ export default function Home() {
         transition={{ duration: 0.5 }}
       >
         <h1 className="px-4 text-center text-4xl font-bold tracking-tighter text-white/10 uppercase select-none md:text-6xl">
-          Deepak Tewatia — Developer / DevOps
+          Ganesh Khetawat
         </h1>
         <p className="mt-4 text-center font-mono text-xs tracking-[0.3em] text-white/5 uppercase select-none md:text-sm">
-          Architecting & scaling robust web applications
+          Building AI & SaaS products with full-stack expertise
         </p>
       </motion.div>
 

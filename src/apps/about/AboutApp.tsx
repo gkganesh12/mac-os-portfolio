@@ -4,22 +4,23 @@ export const AboutApp: React.FC = () => {
   return (
     <div className="h-full overflow-auto p-6 text-white">
       <div className="mx-auto max-w-2xl">
-        <h1 className="mb-1 text-3xl font-bold">Deepak Tewatia</h1>
+        <h1 className="mb-1 text-3xl font-bold">Ganesh Khetawat</h1>
         <h2 className="mb-6 font-mono text-xl font-medium tracking-tight text-blue-400">
           Software Development Engineer — Developer / DevOps
         </h2>
 
         <div className="space-y-4 leading-relaxed text-zinc-300">
           <p>
-            I am a Full Stack Engineer with 3+ years of experience in architecting and scaling
-            robust web applications. My expertise lies in building end-to-end solutions using React,
-            Node.js, and Cloud Infrastructure (AWS) that drive business growth and optimize user
-            experience.
+            I&apos;m Ganesh Khetawat, a Computer Science Engineering student at ADYPU Pune with a
+            strong focus on building real-world AI and SaaS products. I work across full-stack
+            development, distributed systems, and applied AI, and I&apos;ve built multiple
+            production-grade platforms like Aletheia, Netcraft, and SignalCraft.
           </p>
           <p>
-            I have a proven track record of designing microservice architectures, optimizing search
-            workflows, and managing scalable infrastructure. I thrive in environments that challenge
-            me to push the boundaries of modern web performance and cloud-native systems.
+            I&apos;m Oracle certified in Data Science and Generative AI, actively contribute to
+            open-source, and enjoy turning complex ideas into scalable systems. My goal is to build
+            globally impactful technology products while continuously sharpening my engineering and
+            product thinking.
           </p>
         </div>
 

@@ -7,10 +7,10 @@ export const SystemInfoApp: React.FC = () => {
   return (
     <div className="flex h-full flex-col overflow-auto bg-[#1e1e1e] p-6 text-white">
       <div className="mb-8 flex flex-col items-center">
-        <div className="mb-4 flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 shadow-xl">
-          <Monitor size={48} className="text-white" />
+        <div className="mb-4 flex h-20 w-20 items-center justify-center rounded-2xl bg-white/5 p-2 shadow-xl">
+          <img src="/ganesh.png" alt="Ganesh Khetawat" className="h-full w-full object-contain" />
         </div>
-        <h1 className="text-2xl font-bold tracking-tight">Deepak&apos;s Portfolio OS</h1>
+        <h1 className="text-2xl font-bold tracking-tight">Ganesh&apos;s Portfolio OS</h1>
         <p className="text-sm text-zinc-500">Version 1.2.0 (Stable)</p>
       </div>
 
@@ -24,10 +24,10 @@ export const SystemInfoApp: React.FC = () => {
             </h2>
           </div>
           <div className="space-y-1">
-            <p className="text-sm font-bold text-white">Deepak Tewatia</p>
-            <p className="font-mono text-xs text-zinc-500">Software Development Engineer</p>
+            <p className="text-sm font-bold text-white">Ganesh Khetawat</p>
+            <p className="font-mono text-xs text-zinc-500">Software Developer / SDE Intern</p>
             <p className="mt-1 w-fit rounded border border-blue-500/20 px-1.5 text-[10px] text-blue-500">
-              Developer / DevOps
+              Full-Stack / AI & SaaS
             </p>
           </div>
         </section>
@@ -100,7 +100,7 @@ export const SystemInfoApp: React.FC = () => {
 
       <div className="mt-8 text-center text-zinc-700">
         <p className="text-[9px] font-bold tracking-[0.2em] uppercase">
-          © 2026 Deepak Tewatia. All rights reserved.
+          © 2026 Ganesh Khetawat. All rights reserved.
         </p>
       </div>
     </div>

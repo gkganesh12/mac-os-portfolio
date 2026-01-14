@@ -23,7 +23,7 @@ export const MenuBar: React.FC = () => {
 
   const activeConfig = MENU_CONFIG[activeAppId || 'default'] || MENU_CONFIG.default;
   const displayTitle =
-    activeAppId && activeAppId !== 'default' ? activeConfig.displayName : 'Deepak';
+    activeAppId && activeAppId !== 'default' ? activeConfig.displayName : 'Ganesh';
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -57,7 +57,7 @@ export const MenuBar: React.FC = () => {
     { label: 'Shut Down...', action: () => setShutdownDialogOpen(true) },
     { divider: true, label: 'div-4' },
     { label: 'Lock Screen', action: () => setLocked(true) },
-    { label: 'Log Out Deepak...', action: () => console.log('Log Out') },
+    { label: 'Log Out Ganesh...', action: () => console.log('Log Out') },
   ];
 
   return (

@@ -145,7 +145,7 @@ export const DocumentsApp: React.FC = () => {
   const [activeSection, setActiveSection] = useState<Section>('resume');
   const [activeArchDoc, setActiveArchDoc] = useState<ArchitectureDocId>('window-manager');
 
-  const resumePath = "/Deepak's Tewatia Resume.pdf";
+  const resumePath = "/Resume SDE New.pdf";
 
   return (
     <div className="flex h-full bg-[#1e1e1e] text-zinc-300">
@@ -204,7 +204,7 @@ export const DocumentsApp: React.FC = () => {
             <div className="flex items-center justify-between border-b border-white/5 px-6 py-3">
               <div className="flex items-center gap-3">
                 <FileText size={18} className="text-blue-400" />
-                <span className="font-bold text-white">Deepak&apos;s Tewatia Resume.pdf</span>
+                <span className="font-bold text-white">Resume SDE New.pdf</span>
               </div>
               <div className="flex gap-2">
                 <a

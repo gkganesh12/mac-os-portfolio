@@ -17,64 +17,32 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    company: 'Betacraft',
-    role: 'Software Development Engineer (SDE)',
-    duration: '2024 – Present',
-    location: 'Pune, India',
+    company: 'Betacraft Technologies',
+    role: 'Software Apprentice',
+    duration: 'November 2024 – Present',
+    location: 'Hybrid',
     categories: [
       {
-        title: 'Project & System Architecture',
+        title: 'Data Processing & Analytics',
         points: [
-          'Architected and implemented a microservices-based backend, enabling greater scalability and improved fault tolerance for key application features.',
-          'Designed and built an event-driven architecture using a pub/sub model with AWS SQS to decouple services, significantly improving system resilience.',
-          'Integrated various AI APIs into the backend, creating new functionalities and enhancing user experience with intelligent features.',
-          'Contributed to the development of an AI project using Svelte, enabling users to train custom bots and share them within their organizations or embed them on websites via iframes.',
-        ],
-      },
-      {
-        title: 'Performance Optimization',
-        points: [
-          'Reduced API response times by over 50% through targeted backend optimizations.',
-          'Re-architected backend logic by migrating mappers to the backend, enhancing data consistency and simplifying front-end logic.',
-          'Improved database performance and query efficiency by over 20% through strategic indexing and optimization.',
-          'Optimized React.js application performance, achieving a 25% reduction in load times through lazy loading and memoization to minimize re-renders.',
-          'Applied SOLID principles to enhance code quality, leading to a more scalable and maintainable codebase.',
-        ],
-      },
-      {
-        title: 'Deployment & Infrastructure',
-        points: [
-          'Automated application deployments using GitHub Actions, establishing robust CI/CD pipelines that reduced manual deployment time by over 80%.',
-          'Leveraged AWS services, including CloudFront as a CDN, to efficiently handle over 1 million requests per day.',
-          'Infrastructure includes Lambda, SQS, S3, App Runner, EC2, and RDS.',
-          'Secured environments by configuring SSL certificates, managing IAM roles, and implementing monitoring with CloudWatch.',
+          'Processed and standardized a dataset of over 1,00,000 rows from multiple regions to support weekly analytics—enabled business teams to track KPIs across geography and time.',
+          'Designed smart Excel templates embedded with lookup functions and pivot logic, saving 40% reporting time across 4 departments.',
+          'Developed and maintained Power BI dashboards to visualize revenue trends, customer mix, and monthly performance—regularly used by managers and analysts across business units.',
+          'Collaborated with 4 analysts and 2 senior managers to define and validate 6 KPIs, improving report reliability and strategic alignment.',
         ],
       },
     ],
   },
   {
-    company: 'Simplicity Projects',
-    role: 'SDE',
-    duration: '01/2024 – 08/2024',
-    location: 'Faridabad, India',
+    company: 'Microsoft, Edunet Foundation',
+    role: 'AI: Transformative Learning with TechSaksham',
+    duration: 'December 2024 – March 2025',
+    location: 'Remote',
     points: [
-      'Developed a high-performance resource and task management system, architecting the backend with Hasura and GraphQL to improve data retrieval by 40% and implement secure, role-based access with PostgreSQL.',
-      'Built a responsive React.js frontend with integrated real-time collaboration features to enhance user productivity and ensure cross-device accessibility.',
-      'Ensured 99.9% uptime and scalability by deploying the application on AWS EC2 with Docker containers and Nginx.',
-      'Optimized server performance by integrating Amazon S3 for efficient image storage and direct uploads via pre-signed URLs.',
-    ],
-  },
-  {
-    company: 'Dailykit (ONO)',
-    role: 'SDE',
-    duration: '01/2023 – 01/2024',
-    location: 'Gurgaon, India',
-    points: [
-      'Developed and optimized robust backend services, implementing server-side pagination, advanced search, and filtering to improve data management efficiency.',
-      'Designed and built dashboards and user interfaces that improved data visualization, increasing user engagement and retention.',
-      'Used Docker for local development and containerized services to streamline deployment and improve scalability.',
-      'Architected and implemented real-time, event-driven notification systems.',
-      'Automated complex workflows, including a bulk query upload feature with Excel sheet integration, significantly reducing manual effort in procurement processes.',
+      'Developed SMS and Email Spam Detection models using supervised machine learning, achieving 92 - 95% accuracy across multiple classifiers.',
+      'Preprocessed and engineered features from 10,000+ messages using text normalization, tokenization, and TF-IDF.',
+      'Built end-to-end ML pipelines (data preprocessing → training → evaluation) and reduced false positives by ~20% through model optimization.',
+      'Evaluated models using Precision, Recall, F1-Score, and Confusion Matrix, adhering to Responsible AI practices.',
     ],
   },
 ];

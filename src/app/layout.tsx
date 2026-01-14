@@ -23,13 +23,13 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Deepak Tewatia | macOS Portfolio OS',
+  title: 'Ganesh Khetawat | macOS Portfolio OS',
   description:
     'A high-fidelity macOS-inspired interactive portfolio. Explore my professional experience, projects, and architecture through a web-based operating system UI.',
   keywords: [
-    'Deepak Tewatia',
-    'Developer',
-    'DevOps Engineer',
+    'Ganesh Khetawat',
+    'Software Developer',
+    'SDE Intern',
     'macOS Portfolio',
     'Next.js',
     'React',
@@ -38,31 +38,31 @@ export const metadata: Metadata = {
     'Software Engineer Portfolio',
     'Web OS',
   ],
-  authors: [{ name: 'Deepak Tewatia', url: 'https://github.com/deepak1-1' }],
-  creator: 'Deepak Tewatia',
-  publisher: 'Deepak Tewatia',
+  authors: [{ name: 'Ganesh Khetawat', url: 'https://github.com/gkganesh12' }],
+  creator: 'Ganesh Khetawat',
+  publisher: 'Ganesh Khetawat',
   applicationName: 'Portfolio OS',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://deepak-tewatia-portfolio.web.app'), // Replace with actual domain when available
+  metadataBase: new URL('https://ganeshkhetawat-portfolio.web.app'), // Replace with actual domain when available
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Deepak Tewatia | macOS Portfolio OS',
+    title: 'Ganesh Khetawat | macOS Portfolio OS',
     description:
-      'Explore the high-fidelity macOS interactive portfolio of Deepak Tewatia, Developer & DevOps Engineer.',
+      'Explore the high-fidelity macOS interactive portfolio of Ganesh Khetawat, Software Developer & SDE Intern.',
     url: '/',
-    siteName: 'Deepak Tewatia Portfolio',
+    siteName: 'Ganesh Khetawat Portfolio',
     images: [
       {
-        url: '/og-image.png', // Placeholder for OG image
+        url: '/ganesh.png',
         width: 1200,
         height: 630,
-        alt: 'Deepak Tewatia Portfolio OS Preview',
+        alt: 'Ganesh Khetawat Portfolio OS Preview',
       },
     ],
     locale: 'en_US',
@@ -70,10 +70,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Deepak Tewatia | macOS Portfolio OS',
-    description: 'High-fidelity macOS interactive portfolio of Deepak Tewatia.',
-    images: ['/og-image.png'],
-    creator: '@deepaktewatia', // Replace with actual handle if desired
+    title: 'Ganesh Khetawat | macOS Portfolio OS',
+    description: 'High-fidelity macOS interactive portfolio of Ganesh Khetawat.',
+    images: ['/ganesh.png'],
+    creator: '@gkganesh12', // Replace with actual handle if desired
   },
   robots: {
     index: true,
@@ -88,10 +88,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/ganesh.png', sizes: '32x32', type: 'image/png' },
+      { url: '/ganesh.png', sizes: '16x16', type: 'image/png' },
     ],
-    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+    apple: [{ url: '/ganesh.png', sizes: '180x180', type: 'image/png' }],
   },
   manifest: '/site.webmanifest',
 };

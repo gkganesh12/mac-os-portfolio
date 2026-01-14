@@ -3,10 +3,10 @@ import { MenuConfigMap } from '@/types/menu';
 export const MENU_CONFIG: MenuConfigMap = {
   default: {
     appId: 'default',
-    displayName: 'Deepak',
+    displayName: 'Ganesh',
     sections: [
       {
-        title: 'Deepak',
+        title: 'Ganesh',
         items: [
           { label: 'About This Portfolio', appId: 'systemInfo' },
           { divider: true, label: 'divider-1' },
@@ -39,7 +39,7 @@ export const MENU_CONFIG: MenuConfigMap = {
       {
         title: 'About',
         items: [
-          { label: 'About Deepak', appId: 'about' },
+          { label: 'About Ganesh', appId: 'about' },
           { label: 'Professional Resume', appId: 'resume' },
         ],
       },
@@ -105,8 +105,8 @@ export const MENU_CONFIG: MenuConfigMap = {
             label: 'Download Copy',
             action: () => {
               const link = document.createElement('a');
-              link.href = "/Deepak's Tewatia Resume.pdf";
-              link.download = 'Deepak_Tewatia_Resume.pdf';
+              link.href = "/Resume SDE New.pdf";
+              link.download = 'Resume_SDE_New.pdf';
               link.click();
             },
           },
@@ -130,7 +130,7 @@ export const MENU_CONFIG: MenuConfigMap = {
         title: 'Contact',
         items: [
           { label: 'Send Message', appId: 'contact' },
-          { label: 'Email Me', action: () => window.open('mailto:deepak@example.com') },
+          { label: 'Email Me', action: () => window.open('mailto:gkganesh448@gmail.com') },
         ],
       },
       {

@@ -3,38 +3,36 @@ import { ExternalLink } from 'lucide-react';
 
 const PROJECTS = [
   {
-    name: 'ProtoBots',
-    link: 'https://protobots.ai',
+    name: 'DevConnect - MERN Developer Community Platform',
+    link: 'https://github.com/gkganesh12/DevConnect',
     description:
-      'AI-based platform enabling users to create, train, and deploy custom bots, with sharing and iframe embedding support.',
-    tech: ['AI', 'Svelte', 'Integration', 'Scaling'],
+      'Built a full-stack developer networking platform featuring real-time chat, discussion forums, job board, and secure authentication. Implemented JWT-based user authentication and role management with protected routes. Integrated Cloudinary for scalable storage of profile images and post media. Deployed frontend on Vercel and backend on Render, achieving 98% uptime in production.',
+    tech: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'JWT', 'Cloudinary'],
   },
   {
-    name: 'Movie Flicks',
-    link: 'https://movie-flicks-8f653.web.app/',
+    name: 'HealthCare Portal',
     description:
-      'Movie discovery web app with real-time data, search, and optimized UI performance.',
-    tech: ['React.js', 'IMDb API', 'Performance'],
+      'Designed and developed a full-stack healthcare management system with role-based patient and doctor dashboards, appointment scheduling, and digital medical records. Implemented JWT-based authentication and secure REST APIs, ensuring protected access to sensitive healthcare data. Built dynamic dashboards and data visualizations to track appointments, patient history, and system usage in real time.',
+    tech: ['MERN Stack', 'REST APIs', 'MongoDB', 'JWT', 'Data Visualization'],
   },
   {
-    name: 'Portfolio (Terminal-style)',
-    link: 'https://deepak-tewatia-portfolio.web.app/',
+    name: 'Privacy-Preserving Synthetic Data Generator',
+    link: 'https://github.com/gkganesh12/Privacy-Preserving-Synthetic-Data-Generator',
     description:
-      'Terminal-inspired developer portfolio built with Next.js and deployed on Firebase.',
-    tech: ['Next.js', 'Firebase', 'CSS', 'UI/UX'],
+      'Engineered a privacy-safe synthetic data generation tool using CTGAN to enable ML workflows without exposing sensitive information. Implemented Differential Privacy metrics and model fidelity visualizations via an interactive Streamlit web application.',
+    tech: ['Python', 'CTGAN', 'Differential Privacy', 'Streamlit', 'Machine Learning'],
   },
   {
-    name: 'Kiosk, Brand Website & Admin Dashboard',
+    name: 'Sales Dashboard for Regional Performance',
     description:
-      'Developed a comprehensive real-time system serving three clients: web, mobile, and kiosk. Backend built with Node.js and Hasura enabled near-instant data synchronization across platforms. Engineered a centralized admin dashboard that reduced content update time by over 70%.',
-    tech: ['Node.js', 'Hasura', 'Real-time', 'Admin Panel'],
+      'Queried and joined 3 sales-related tables covering over 25,000 rows across 12 months and 5 regions using optimized SQL joins. Built 10 dynamic measures and KPIs in Power BI to track regional sales, return trends, and product performance. Designed multipage dashboards with slicers and filters. Detected a 14% sales drop post-festival in the South region, which was used for a marketing recovery plan.',
+    tech: ['SQL', 'Power BI', 'Data Analysis', 'KPIs', 'Dashboard Design'],
   },
   {
-    name: 'Clipboard Manager (Python)',
-    link: 'https://github.com/deepak1-1/Clip_Board---Task',
+    name: 'Customer Churn Analysis',
     description:
-      'Built a Python-based clipboard management system with a GUI and persistent storage. Implemented database-backed clipboard history, recycle-bin functionality, and modular backend architecture handling automated cleanup tasks.',
-    tech: ['Python', 'SQLite', 'GUI', 'Automation'],
+      'Analyzed behavior of 7,043 telecom customers to identify churn patterns based on tenure, contract type, and monthly charges. Engineered new features including contract type buckets and tenure bands to improve segmentation. Generated 11 visualizations (histograms, box plots, heatmaps) to highlight churn-prone segments. Revealed that 38% of churned users were on monthly contracts with less than 3-month tenure—suggested early engagement strategies.',
+    tech: ['Python', 'Data Analysis', 'Visualization', 'Feature Engineering', 'Telecom Analytics'],
   },
 ];
 

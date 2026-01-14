@@ -34,7 +34,7 @@ export const DesktopGuard: React.FC<{ children: React.ReactNode }> = ({ children
           </p>
         </div>
         <p className="mt-8 text-[10px] tracking-widest text-zinc-600 uppercase">
-          Deepak Tewatia — Portfolio OS
+          Ganesh Khetawat — Portfolio OS
         </p>
       </div>
     );

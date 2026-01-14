@@ -4,12 +4,12 @@ import React from 'react';
 import { Download, FileText } from 'lucide-react';
 
 export const ResumeApp: React.FC = () => {
-  const resumeUrl = "/Deepak's Tewatia Resume.pdf";
+  const resumeUrl = "/Resume SDE New.pdf";
 
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = resumeUrl;
-    link.download = 'Deepak_Tewatia_Resume.pdf';
+    link.download = 'Resume_SDE_New.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -21,7 +21,7 @@ export const ResumeApp: React.FC = () => {
       <div className="flex items-center justify-between border-b border-white/10 bg-white/5 px-4 py-2">
         <div className="flex items-center space-x-2">
           <FileText size={16} className="text-blue-400" />
-          <span className="text-xs font-medium text-zinc-300">Deepak_Tewatia_Resume.pdf</span>
+          <span className="text-xs font-medium text-zinc-300">Resume SDE New.pdf</span>
         </div>
         <button
           onClick={handleDownload}
@@ -37,7 +37,7 @@ export const ResumeApp: React.FC = () => {
         <iframe
           src={`${resumeUrl}#toolbar=0&navpanes=0&scrollbar=0`}
           className="h-full w-full border-none"
-          title="Deepak Tewatia Resume"
+          title="Resume SDE New"
         />
 
         {/* Guard for iframes in some browsers that might try to take over */}
